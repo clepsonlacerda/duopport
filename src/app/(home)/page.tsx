@@ -9,7 +9,7 @@ export default function Home() {
 
       <div className="container mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <Link href="#" className="border bg-white hover:bg-zinc-50 h-28 rounded-md flex items-center justify-center gap-4 drop-shadow-md">
+          <Link href="/section" className="border bg-white hover:bg-zinc-50 h-28 rounded-md flex items-center justify-center gap-4 drop-shadow-md">
             <ListPlusIcon size={32} className="text-zinc-900" />
             <span className="text-zinc-900 font-medium">
               Seção

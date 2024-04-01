@@ -19,7 +19,7 @@ const SideMenu = () => {
         </Button>
 
         <Button variant="outline" className="justify-start" asChild>
-          <Link href="/bookings">
+          <Link href="/section">
             <ListPlusIcon size={18} className="mr-2" />
             Seção
           </Link>
