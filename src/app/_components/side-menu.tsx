@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { SheetHeader, SheetTitle } from "./ui/sheet";
-import { BoltIcon, BookTextIcon, HomeIcon, ListPlusIcon, ShieldQuestionIcon } from "lucide-react";
+import { BoltIcon, BookTextIcon, GroupIcon, HomeIcon, ListPlusIcon, ShieldQuestionIcon } from "lucide-react";
 
 const SideMenu = () => {
   return (
@@ -22,6 +22,13 @@ const SideMenu = () => {
           <Link href="/section">
             <ListPlusIcon size={18} className="mr-2" />
             Seção
+          </Link>
+        </Button>
+
+        <Button variant="outline" className="justify-start" asChild>
+          <Link href="/unit">
+            <GroupIcon size={18} className="mr-2" />
+            Unidade
           </Link>
         </Button>
 

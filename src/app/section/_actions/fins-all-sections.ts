@@ -7,3 +7,13 @@ export const getFindAllSections = async () => {
 
   return sections;
 }
+
+export const getFindById = async (id: string) => {
+  const section = await db.section.findUnique({
+    where: {
+      id,
+    }
+  });
+
+  return section;
+}

@@ -14,6 +14,15 @@ datasource db {
 }
 
 model Section {
-  id   String @id @default(uuid())
-  name String
+  id    String @id @default(uuid())
+  name  String
+  units Unit[]
+}
+
+model Unit {
+  id          String  @id @default(uuid())
+  name        String
+  description String
+  sectionId   String
+  barbershop  Section @relation(fields: [sectionId], references: [id])
 }
