@@ -30,10 +30,10 @@ export default function Home() {
             </span>
           </Link>
 
-          <Link href="#" className="border bg-white hover:bg-zinc-50 h-28 rounded-md flex items-center justify-center gap-4 drop-shadow-md">
+          <Link href="/learn" className="border bg-white hover:bg-zinc-50 h-28 rounded-md flex items-center justify-center gap-4 drop-shadow-md">
             <BookTextIcon size={32} className="text-zinc-900" />
             <span className="text-zinc-900 font-medium">
-              Questões
+              Aprender
             </span>
           </Link>
         </div>

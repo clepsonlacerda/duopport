@@ -33,16 +33,16 @@ const SideMenu = () => {
         </Button>
 
         <Button variant="outline" className="justify-start" asChild>
-          <Link href="/barbershops/register">
+          <Link href="/questions">
             <ShieldQuestionIcon size={18} className="mr-2" />
             Perguntas
           </Link>
         </Button>
 
         <Button variant="outline" className="justify-start" asChild>
-          <Link href="/barbershops/register">
+          <Link href="/learn">
             <BookTextIcon size={18} className="mr-2" />
-            Questões
+            Aprender
           </Link>
         </Button>
 

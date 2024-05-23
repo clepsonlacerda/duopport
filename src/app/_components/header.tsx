@@ -1,10 +1,11 @@
-import { Link, MenuIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
 import SideMenu from "./side-menu";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
         {/* <Link href="/">
           <Image src="/logo.png" alt="FSW Barber" height={18} width={120} />
         </Link> */}
-        <h5 className="text-slate-900 font-semibold">Duopport</h5>
+        <Link href="/">
+          <h5 className="text-slate-900 font-semibold">Duopport</h5>
+        </Link>
 
         <Sheet>
           <SheetTrigger asChild >
