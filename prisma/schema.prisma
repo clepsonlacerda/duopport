@@ -20,9 +20,27 @@ model Section {
 }
 
 model Unit {
-  id          String  @id @default(uuid())
+  id          String     @id @default(uuid())
   name        String
   description String
   sectionId   String
-  barbershop  Section @relation(fields: [sectionId], references: [id])
+  barbershop  Section    @relation(fields: [sectionId], references: [id])
+  questions   Question[]
+}
+
+model Question {
+  id       String   @id @default(uuid())
+  unitId   String
+  unit     Unit     @relation(fields: [unitId], references: [id])
+  question String
+  correct  Boolean
+  date     DateTime
+  answers  Answer[]
+}
+
+model Answer {
+  id         String   @id @default(uuid())
+  name       String
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
 }
