@@ -196,6 +196,7 @@ const PageQuestion = () => {
     setAnswers((state) => state.filter((item) => item.name != name));
 
     if (id) {
+      console.log('deletado');
       await DeleteAnswer(id);
     }
   }

@@ -9,7 +9,7 @@ export const getFindAllSections = async () => {
 }
 
 export const getFindById = async (id: string) => {
-  const section = await db.section.findUnique({
+  const section = await db.section.findFirst({
     where: {
       id,
     }
